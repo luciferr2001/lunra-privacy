@@ -1,7 +1,7 @@
 # Delete your Lunra account and data
 
-Lunra (developed by [fill in developer contact email before publishing])
-lets you request deletion of your account and cloud-backed-up data in two
+Lunra (developed by Rutik Rathod, contact: rathodrutik05@gmail.com) lets
+you request deletion of your account and cloud-backed-up data in two
 ways.
 
 ## In the app
@@ -18,10 +18,10 @@ Data stored locally on your device is not affected by this — see
 
 ## Without the app
 
-Email the developer at [fill in developer contact email before
-publishing] from the Google account you signed in with, with the subject
-"Delete my Lunra data." Your cloud-backed-up data and account link will
-be deleted within 30 days, and you'll get a confirmation reply.
+Email the developer at rathodrutik05@gmail.com from the Google account
+you signed in with, with the subject "Delete my Lunra data." Your
+cloud-backed-up data and account link will be deleted within 30 days,
+and you'll get a confirmation reply.
 
 ## What gets deleted
 
