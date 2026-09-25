@@ -1,14 +1,9 @@
 # Privacy Policy - Lunra
 
-**Draft - the developer must review and fill in the contact email below
-before submitting to Play Console.**
-
----
-
-Last updated: 2026-09-24
+Last updated: 2026-09-25
 
 Lunra ("the app") is a menstrual cycle and period tracker developed by
-[fill in developer contact email before publishing]. This policy explains
+Rutik Rathod (contact: rathodrutik05@gmail.com). This policy explains
 what data the app collects, how it's used, and the choices you have.
 
 ## Summary
@@ -17,8 +12,8 @@ Lunra is built local-first: your cycle, symptom, mood, and note entries
 are stored encrypted on your device, and no account is required to use
 the app. Signing in with Google is entirely optional and exists for one
 reason - to back up your data to your own Google account and restore it
-if you reinstall the app or switch devices. If you never sign in, nothing
-you log ever leaves your device.
+if you reinstall the app or switch devices. If you never sign in, none
+of what you log ever leaves your device.
 
 Because this app handles menstrual cycle data - a sensitive health
 category - this policy is deliberately explicit about exactly what is
@@ -31,6 +26,8 @@ only, encrypted at rest:
 
 - Period start/end dates
 - Flow intensity, symptoms, mood, and an optional energy rating you log
+- Basal body temperature, cervical mucus, and medications/supplements
+  you log
 - Free-text notes you write
 - Cycle length preferences and app settings (reminders, app lock,
   appearance)
@@ -57,16 +54,48 @@ Once signed in:
 - Signing out stops further syncing but does not delete data already
   backed up - use "Delete cloud backup" for that.
 
+## App usage and crash diagnostics
+
+The app uses Firebase Analytics, Firebase Crashlytics, and Firebase
+Performance Monitoring to understand how the app is used and to fix
+bugs and crashes. This is separate from - and never merged with - your
+cycle/health data described above. Specifically:
+
+- **Analytics**: a small set of event names (e.g. "a period was logged,"
+  "a PDF export was completed," "onboarding finished") and coarse
+  counts (e.g. how many fields were filled in on a log entry). Event
+  data never includes symptom text, notes, dates you logged, or any
+  other cycle content.
+- **Crashlytics**: if the app crashes, a stack trace and basic device/OS
+  information (model, Android version, app version) is sent so the
+  crash can be diagnosed and fixed. Crash reports do not include your
+  cycle data.
+- **Performance Monitoring**: app start-up time and how long a PDF
+  export takes to generate, to catch and fix slowness.
+
+These tools use Google's Firebase Analytics/Crashlytics infrastructure
+and are tied to an anonymous installation identifier, not your name,
+email, or Google account. This data is never used to personalize the
+ads shown in the app (see below) and is never sold or shared with
+advertisers.
+
+## Advertising
+
+The app shows non-personalized ads via Google AdMob. Ad requests are
+explicitly marked non-personalized, so they are not based on your
+activity in this app or elsewhere. See Google's AdMob policies for how
+ad delivery itself works: https://policies.google.com/technologies/ads.
+
 ## No other data collection
 
 This app does not:
 
-- Show ads or use any advertising SDK.
-- Use analytics, crash reporting, or any tracking SDK.
-- Access your device's camera, microphone, precise location, or contacts.
-- Share, sell, or otherwise disclose your data to any third party.
-- Use your data for any purpose other than providing the app's own
-  features to you.
+- Access your device's camera, microphone, precise location, or
+  contacts.
+- Share, sell, or otherwise disclose your cycle/health data to any
+  third party.
+- Use your cycle data for any purpose other than providing the app's
+  own features to you.
 
 ## App lock
 
@@ -82,6 +111,9 @@ password, or biometric data itself.
   app.
 - Cloud backup data persists until you delete it via Settings, or
   request deletion by contacting the developer.
+- Analytics/Crashlytics/Performance data follows Firebase's standard
+  retention periods and is not retrievable per-user since it isn't tied
+  to your identity.
 
 ## Children's privacy
 
@@ -96,12 +128,6 @@ date above will reflect the most recent revision.
 
 ## Contact
 
-For privacy questions about this app, contact the developer at:
-[fill in developer contact email before publishing]
-
----
-
-_Developer note: this draft is provided as a starting point only. Host
-this file at a public URL before submitting to Google Play - required by
-the Health apps declaration and Data Safety form for any app handling
-menstrual/reproductive health data._
+For privacy questions about this app, or to request deletion of your
+cloud-backed-up data without using the app, contact the developer at:
+rathodrutik05@gmail.com
